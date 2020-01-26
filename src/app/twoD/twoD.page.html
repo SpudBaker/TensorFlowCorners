@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      2D Model - Fuel consumption
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h4>Input engine size : {{userInput}}</h4>
+  <h4>Predicted MPG : {{prediction}}</h4>
+  <input type="number" (change)="linearPrediction($event.target.value)"/>
+</ion-content>
