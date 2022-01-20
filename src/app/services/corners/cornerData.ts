@@ -1279,4 +1279,24 @@ export const cornerData: CornerTypes.Match[] = [
         away: Teams.Leeds,
         awayCorners: 3
     },
+    //18/01/2022
+    {
+        home : Teams.Brighton,
+        homeCorners: 5,
+        away: Teams.Chelsea,
+        awayCorners: 7
+    },
+    //19/01/2022
+    {
+        home : Teams.Brentford,
+        homeCorners: 6,
+        away: Teams.ManUtd,
+        awayCorners: 9
+    },
+    {
+        home : Teams.Leicester,
+        homeCorners: 3,
+        away: Teams.Spurs,
+        awayCorners: 8
+    }
 ]
