@@ -8,7 +8,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { CornersService } from './services/corners/corners.service';
+import { CornersPremService } from './football/services/cornersPrem/corners.service';
+import { CornersScotPremService } from './football/services/cornersScotPrem/corners.service';
 
 
 
@@ -17,7 +18,8 @@ import { CornersService } from './services/corners/corners.service';
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
-    CornersService,
+    CornersPremService,
+    CornersScotPremService,
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

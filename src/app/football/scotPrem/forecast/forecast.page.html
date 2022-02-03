@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Predict corners in a Premiership match</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <br/>
+  <br/>
+    <form [formGroup]="formData">
+      <ion-list>
+        <ion-list-header>Select Teams</ion-list-header>
+        <ion-item>
+          <ion-label>HomeTeam</ion-label>
+          <ion-select formControlName="homeTeam" (ionChange)="predict()">
+            <ion-select-option  *ngFor="let opt of teams">{{opt}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-label>AwayTeam</ion-label>
+          <ion-select formControlName="awayTeam" (ionChange)="predict()">
+              <ion-select-option  *ngFor="let opt of teams">{{opt}}</ion-select-option>
+          </ion-select><br/>
+        </ion-item>
+      </ion-list>
+    </form>
+    Home Corners: {{predictionHomeCorners}}<br/>
+    Away Corners: {{predictionAwayCorners}}
+</ion-content>

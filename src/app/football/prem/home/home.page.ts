@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { NavController} from '@ionic/angular';
 import * as tf from '@tensorflow/tfjs';
 import * as tfvis from '@tensorflow/tfjs-vis';
-import { CornersService } from '../../services/corners/corners.service';
-import * as CornerTypes from '../../services/corners/cornersTypes';
+import { CornersPremService } from '../../services/cornersPrem/corners.service';
+import * as CornerTypes from '../../services/cornersPrem/cornersTypes';
 
 @Component({
   selector: 'app-football-home',
@@ -21,7 +21,7 @@ export class HomePage {
   trainInputMin: tf.Tensor;
   trainNormalizedLabels: tf.Tensor;
 
-  constructor(private cornerService: CornersService, private navCtrl: NavController) {
+  constructor(private cornerService: CornersPremService, private navCtrl: NavController) {
    }
 
   ionViewDidEnter() {

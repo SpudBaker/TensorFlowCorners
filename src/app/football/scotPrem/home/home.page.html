@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Corner predictions training page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div *ngIf="modelTrained">
+    <ion-grid>
+        <ion-row>
+          <ion-col size="5">
+          </ion-col>
+          <ion-col size="2">
+            <ion-button *ngIf="modelTrained" (click)="nav('football/forecast')" size = "large">Predict</ion-button>
+          </ion-col>
+          <ion-col size="5">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="5">
+          </ion-col>
+          <ion-col size="2">
+             Loss = {{testLoss}}
+          </ion-col>
+          <ion-col size="5">
+          </ion-col>
+        </ion-row>
+    </ion-grid>  
+  </div>
+</ion-content>

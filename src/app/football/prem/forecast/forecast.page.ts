@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import * as tf from '@tensorflow/tfjs';
-import { CornersService } from '../../services/corners/corners.service';
-import * as CornerTypes from '../../services/corners/cornersTypes';
+import { CornersPremService } from '../../services/cornersPrem/corners.service';
+import * as CornerTypes from '../../services/cornersPrem/cornersTypes';
 
 @Component({
   selector: 'app-football-forecast',
@@ -16,7 +15,7 @@ export class ForecastPage {
   predictionAwayCorners: number;
   teams: CornerTypes.Teams[];
 
-  constructor(private formBuilder: FormBuilder, private cornerService: CornersService) {
+  constructor(private formBuilder: FormBuilder, private cornerService: CornersPremService) {
     this.formData = this.formBuilder.group({
       homeTeam: '',
       awayTeam: ''

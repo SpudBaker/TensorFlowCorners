@@ -6,7 +6,8 @@ const routes: Routes = [
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   { path: 'twoD', loadChildren: () => import('./twoD/twoD.module').then( m => m.TwoDPageModule) },
   { path: 'classification', loadChildren: () => import('./classification/classification.module').then( m => m.ClassificationPageModule) },
-  { path: 'football', loadChildren: () => import('./football/football.module').then(m => m.FootballPageModule) },
+  { path: 'premFootball', loadChildren: () => import('./football/prem/football.module').then(m => m.PremModule) },
+  { path: 'scotPremFootball', loadChildren: () => import('./football/scotPrem/football.module').then(m => m.ScotPremModule) },
 ];
 
 @NgModule({

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController} from '@ionic/angular';
+import { CornersPremService } from '../football/services/cornersPrem/corners.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,8 @@ import { NavController} from '@ionic/angular';
 })
 export class HomePage {
 
-  constructor(private navCtrl: NavController) { }
+  constructor(private navCtrl: NavController, private cornerService: CornersPremService) { 
+  }
 
   navTwoD() {
     this.navCtrl.navigateRoot('twoD');
@@ -18,8 +20,12 @@ export class HomePage {
     this.navCtrl.navigateRoot('classification');
   }
 
-  navFootball() {
-    this.navCtrl.navigateRoot('football');
+  async navFootballPrem() {
+    this.navCtrl.navigateRoot('premFootball');
+  }
+
+  async navFootballScotPrem() {
+    this.navCtrl.navigateRoot('scotPremFootball');
   }
 
 }

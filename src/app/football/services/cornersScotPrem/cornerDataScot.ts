@@ -5,6 +5,53 @@ const Teams = CornerTypes.Teams;
 export const matchesToForecast: CornerTypes.Match[] = [
 ]
 
+export function convertTeamNameTo20DArray(team: CornerTypes.Teams): Array<number> {
+    switch (team) {
+      case CornerTypes.Teams.Arsenal:
+        return [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.AstonVilla:
+        return [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.Brentford:
+        return [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.Brighton:
+        return [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.Burnley:
+        return [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.Chelsea:
+        return [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.CrystalPalace:
+        return [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.Everton:
+        return [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.Leicester:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.Liverpool:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.ManCity:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.ManUtd:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.Newcastle:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.Norwich:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.Leeds:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+      case CornerTypes.Teams.Southampton:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+      case CornerTypes.Teams.Spurs:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+      case CornerTypes.Teams.Watford:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
+      case CornerTypes.Teams.WestHam:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+      case CornerTypes.Teams.Wolves:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+      default:
+        console.log('not a recognised team');
+    }
+  }
+
 export const cornerData: CornerTypes.Match[] = [
     //13/08/2021
     {

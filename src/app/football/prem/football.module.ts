@@ -9,14 +9,8 @@ import { HomePage } from './home/home.page';
 import { ForecastPage } from './forecast/forecast.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomePage
-  },
-  {
-    path: 'forecast',
-    component: ForecastPage
-  },
+  { path: '', component: HomePage },
+  { path: 'forecast', component: ForecastPage },
 ];
 
 @NgModule({
@@ -29,4 +23,4 @@ const routes: Routes = [
   ],
   declarations: [HomePage, ForecastPage]
 })
-export class FootballPageModule {}
+export class PremModule {}

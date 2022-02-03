@@ -9,7 +9,7 @@ export class Match {
  * team represented as a value in an array of 0, 1s.
  * e.g. 1,0,0,0,0,0,0,0,0,0
  */
-export class MatchNumeric {
+ export class MatchNumeric {
     home: Array<number>;
     homeCorners: number;
     away: Array<number>;
@@ -26,7 +26,7 @@ export class MatchTestResult {
     team: Teams;
     homeAccuracy: number;
     awayAccuracy: Number
-} 
+}
 
 export enum Teams {
     Arsenal = 'Arsenal',
