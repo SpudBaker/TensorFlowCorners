@@ -29,25 +29,16 @@ export class MatchTestResult {
 }
 
 export enum Teams {
-    Arsenal = 'Arsenal',
-    AstonVilla = 'AstonVilla',
-    Brentford = 'Brentford',
-    Brighton = 'Brighton',
-    Burnley = 'Burnley',
-    Chelsea = 'Chelsea',
-    CrystalPalace = 'CrystalPalace',
-    Everton = 'Everton',
-    Leeds = 'Leeds',
-    Leicester = 'Leicester',
-    Liverpool = 'Liverpool',
-    ManCity = 'ManCity',
-    ManUtd = 'ManUtd',
-    Newcastle = 'Newcastle',
-    Norwich = 'Norwich',
-    Southampton = 'Southampton',
-    Spurs = 'Spurs',
-    Watford = 'Watford',
-    WestHam = 'WestHam',
-    Wolves = 'Wolves'
-
+    Aberdeen = 'Aberdeen',
+    Celtic = 'Celtic',
+    Dundee = 'Dundee',
+    DundeeUtd = 'Dundee Utd',
+    Hearts = 'Hearts',
+    Hibs = 'Hibs',
+    Livingston = 'Livingston',
+    Motherwell = 'Mothewell',
+    Rangers = 'Rangers',
+    RossCounty = 'Ross County',
+    StJohnston = 'St Johnston',
+    StMirren = 'St Mirren'
 }

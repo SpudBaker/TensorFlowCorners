@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import * as CornerTypes from './cornersTypes';
+import * as CornerTypes from './cornersPremTypes';
 import * as tf from '@tensorflow/tfjs';
 import * as CornerData from './cornerDataPrem';
 

@@ -1,4 +1,4 @@
-import * as CornerTypes from './cornersTypes';
+import * as CornerTypes from './cornersPremTypes';
 
 const Teams = CornerTypes.Teams;
 
@@ -8,7 +8,7 @@ export const matchesToForecast: CornerTypes.Match[] = [
 export function convertTeamNameTo20DArray(team: CornerTypes.Teams): Array<number> {
     switch (team) {
       case CornerTypes.Teams.Arsenal:
-        return [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+        return [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       case CornerTypes.Teams.AstonVilla:
         return [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       case CornerTypes.Teams.Brentford:
@@ -1384,6 +1384,11 @@ export const cornerData: CornerTypes.Match[] = [
         away: Teams.ManCity,
         awayCorners: 11
     },
-
-
+    // 05/02/2021
+    {
+        home : Teams.Burnley,
+        homeCorners: 4,
+        away: Teams.Watford,
+        awayCorners: 7
+    }
 ]

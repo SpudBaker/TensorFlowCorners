@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { NavController} from '@ionic/angular';
 import * as tf from '@tensorflow/tfjs';
 import * as tfvis from '@tensorflow/tfjs-vis';
-import { CornersPremService } from '../../services/cornersPrem/corners.service';
-import * as CornerTypes from '../../services/cornersPrem/cornersTypes';
+import { CornersScotPremService } from '../../services/cornersScotPrem/corners.service';
+import * as CornerTypes from '../../services/cornersScotPrem/cornersTypes';
 
 @Component({
   selector: 'app-football-home',
@@ -21,7 +21,7 @@ export class HomePage {
   trainInputMin: tf.Tensor;
   trainNormalizedLabels: tf.Tensor;
 
-  constructor(private cornerService: CornersPremService, private navCtrl: NavController) {
+  constructor(private cornerService: CornersScotPremService, private navCtrl: NavController) {
    }
 
   ionViewDidEnter() {
@@ -41,7 +41,7 @@ export class HomePage {
       const labels = data.map(match => 
         [match.homeCorners, match.awayCorners]
       );
-      const inputTensor = tf.tensor(inputs, [inputs.length, 40]);
+      const inputTensor = tf.tensor(inputs, [inputs.length, 24]);
       const labelTensor = tf.tensor(labels, [labels.length, 2]);
       //Step 3. Normalize the data to the range 0 - 1 using min-max scaling
       const inputMax = inputTensor.max();
@@ -64,7 +64,7 @@ export class HomePage {
 
   async createModel() {
     const model = tf.sequential();
-    model.add(tf.layers.dense({inputShape: [40], units: 40, useBias: true}));
+    model.add(tf.layers.dense({inputShape: [24], units: 24, useBias: true}));
     model.add(tf.layers.dense({units: 40, activation: 'sigmoid'}));
     model.add(tf.layers.dense({units: 40, activation: 'sigmoid'}));
     model.add(tf.layers.dense({units: 2, useBias: true}));

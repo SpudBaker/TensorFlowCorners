@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { CornersPremService } from '../../services/cornersPrem/corners.service';
-import * as CornerTypes from '../../services/cornersPrem/cornersTypes';
+import * as CornerTypes from '../../services/cornersPrem/cornersPremTypes';
 
 @Component({
   selector: 'app-football-forecast',
@@ -24,6 +24,7 @@ export class ForecastPage {
 
   ionViewDidEnter() {
     this.teams = Object.values(CornerTypes.Teams);
+    console.log(this.teams);
   }
 
   predict() { 

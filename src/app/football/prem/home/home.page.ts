@@ -3,7 +3,7 @@ import { NavController} from '@ionic/angular';
 import * as tf from '@tensorflow/tfjs';
 import * as tfvis from '@tensorflow/tfjs-vis';
 import { CornersPremService } from '../../services/cornersPrem/corners.service';
-import * as CornerTypes from '../../services/cornersPrem/cornersTypes';
+import * as CornerTypes from '../../services/cornersPrem/cornersPremTypes';
 
 @Component({
   selector: 'app-football-home',

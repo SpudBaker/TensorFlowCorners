@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { CornersPremService } from '../../services/cornersPrem/corners.service';
-import * as CornerTypes from '../../services/cornersPrem/cornersTypes';
+import { CornersScotPremService } from '../../services/cornersScotPrem/corners.service';
+import * as CornerTypes from '../../services/cornersScotPrem/cornersTypes';
 
 @Component({
   selector: 'app-football-forecast',
@@ -15,7 +15,7 @@ export class ForecastPage {
   predictionAwayCorners: number;
   teams: CornerTypes.Teams[];
 
-  constructor(private formBuilder: FormBuilder, private cornerService: CornersPremService) {
+  constructor(private formBuilder: FormBuilder, private cornerService: CornersScotPremService) {
     this.formData = this.formBuilder.group({
       homeTeam: '',
       awayTeam: ''

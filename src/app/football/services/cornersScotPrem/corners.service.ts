@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import * as CornerTypes from '../cornersPrem/cornersTypes';
+import * as CornerTypes from '../cornersScotPrem/cornersTypes';
 import * as tf from '@tensorflow/tfjs';
 import * as CornerData from './cornerDataScot';
 
@@ -36,12 +36,20 @@ export class CornersScotPremService {
   }
 
   predict(home: CornerTypes.Teams, away: CornerTypes.Teams): number[]{
+    console.log('predict()');
     const inputNumeric = this.convertTeamNameTo20DArray(home)
       .concat(this.convertTeamNameTo20DArray(away));
-    const inputTensor = tf.tensor([inputNumeric], [1,40]);
+    console.log(inputNumeric);
+    const inputTensor = tf.tensor([inputNumeric], [1,24]);
+    console.log('result =>');
+    console.log(inputTensor);
+    console.log('this.getModel()');
+    console.log(this.getModel());
     const result: any = this.getModel().predict(inputTensor)
       .mul(this.trainLabelMax.sub(this.trainLabelMin))
       .add(this.trainLabelMin).arraySync(); 
+    console.log('result =>');
+    console.log(result);
     return [result[0][0], result[0][1]];
   }
 
