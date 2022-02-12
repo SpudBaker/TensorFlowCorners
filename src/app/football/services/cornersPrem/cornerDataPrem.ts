@@ -1390,5 +1390,94 @@ export const cornerData: CornerTypes.Match[] = [
         homeCorners: 4,
         away: Teams.Watford,
         awayCorners: 7
+    },
+    // 08/02/2021
+    {
+        home : Teams.Newcastle,
+        homeCorners: 6,
+        away: Teams.Everton,
+        awayCorners: 2
+    },
+    {
+        home : Teams.WestHam,
+        homeCorners: 5,
+        away: Teams.Watford,
+        awayCorners: 6
+    },
+    {
+        home : Teams.Burnley,
+        homeCorners: 2,
+        away: Teams.ManUtd,
+        awayCorners: 10
+    },
+    // 09/02/2021
+    {
+        home : Teams.ManCity,
+        homeCorners: 9,
+        away: Teams.Brentford,
+        awayCorners: 3
+    },
+    {
+        home : Teams.Norwich,
+        homeCorners: 4,
+        away: Teams.CrystalPalace,
+        awayCorners: 6
+    },
+    {
+        home : Teams.Spurs,
+        homeCorners: 2,
+        away: Teams.Southampton,
+        awayCorners: 8
+    },
+    {
+        home : Teams.AstonVilla,
+        homeCorners: 6,
+        away: Teams.Leeds,
+        awayCorners: 11
+    },
+    //10/02/2022
+    {
+        home : Teams.Liverpool,
+        homeCorners: 7,
+        away: Teams.Leicester,
+        awayCorners: 6
+    },
+    {
+        home : Teams.Wolves,
+        homeCorners: 7,
+        away: Teams.Arsenal,
+        awayCorners: 4
+    },
+    //12/02/2022
+    {
+        home : Teams.ManUtd,
+        homeCorners: 1,
+        away: Teams.Southampton,
+        awayCorners: 4
+    },
+    {
+        home : Teams.Brentford,
+        homeCorners: 3,
+        away: Teams.CrystalPalace,
+        awayCorners: 9
+    },
+    {
+        home : Teams.Everton,
+        homeCorners: 5,
+        away: Teams.Leeds,
+        awayCorners: 3
+    },
+    {
+        home : Teams.Watford,
+        homeCorners: 4,
+        away: Teams.Brighton,
+        awayCorners: 5
+    },
+    {
+        home : Teams.Norwich,
+        homeCorners: 4,
+        away: Teams.ManCity,
+        awayCorners: 12
     }
+
 ]
