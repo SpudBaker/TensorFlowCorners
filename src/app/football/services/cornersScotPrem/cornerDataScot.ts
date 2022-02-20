@@ -486,6 +486,104 @@ export const cornerData: CornerTypes.Match[] = [
     away: Teams.Rangers,
     awayCorners: 12
   },
+  //06/11/2021
+  {
+    home : Teams.Aberdeen,
+    homeCorners: 13,
+    away: Teams.Motherwell,
+    awayCorners: 2
+  },
+  {
+    home : Teams.Hearts,
+    homeCorners: 8,
+    away: Teams.DundeeUtd,
+    awayCorners: 6
+  },
+  {
+    home : Teams.StJohnston,
+    homeCorners: 1,
+    away: Teams.StMirren,
+    awayCorners: 4
+  },
+  //07/11/2021
+  {
+    home : Teams.Dundee,
+    homeCorners: 2,
+    away: Teams.Celtic,
+    awayCorners: 13
+  },
+  //20/11/2021
+  {
+    home : Teams.StMirren,
+    homeCorners: 7,
+    away: Teams.Livingston,
+    awayCorners: 3
+  },
+  {
+    home : Teams.Motherwell,
+    homeCorners: 9,
+    away: Teams.Hearts,
+    awayCorners: 4
+  },
+  {
+    home : Teams.DundeeUtd,
+    homeCorners: 4,
+    away: Teams.Aberdeen,
+    awayCorners: 3
+  },
+  //24/11/2021
+  {
+    home : Teams.RossCounty,
+    homeCorners: 6,
+    away: Teams.Hibs,
+    awayCorners: 3
+  },
+  //27/11/2021
+  {
+    home : Teams.StJohnston,
+    homeCorners: 1,
+    away: Teams.Hibs,
+    awayCorners: 11
+  },
+  {
+    home : Teams.RossCounty,
+    homeCorners: 5,
+    away: Teams.DundeeUtd,
+    awayCorners: 2
+  },
+  {
+    home : Teams.Hearts,
+    homeCorners: 5,
+    away: Teams.StMirren,
+    awayCorners: 7
+  },
+  {
+    home : Teams.Dundee,
+    homeCorners: 5,
+    away: Teams.Motherwell,
+    awayCorners: 4
+  },
+  //28/11/2021
+  {
+    home : Teams.Celtic,
+    homeCorners: 14,
+    away: Teams.Aberdeen,
+    awayCorners: 11
+  },
+  {
+    home : Teams.Livingston,
+    homeCorners: 3,
+    away: Teams.Rangers,
+    awayCorners: 11
+  },
+  //30/11/2021
+  {
+    home : Teams.Livingston,
+    homeCorners: 3,
+    away: Teams.DundeeUtd,
+    awayCorners: 5
+  },
+
 
 
 ]

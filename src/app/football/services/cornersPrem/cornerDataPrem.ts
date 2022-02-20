@@ -1478,6 +1478,101 @@ export const cornerData: CornerTypes.Match[] = [
         homeCorners: 4,
         away: Teams.ManCity,
         awayCorners: 12
-    }
+    },
+    //13/02/2022
+    {
+        home : Teams.Leicester,
+        homeCorners: 5,
+        away: Teams.WestHam,
+        awayCorners: 4
+    },
+    {
+        home : Teams.Spurs,
+        homeCorners: 7,
+        away: Teams.Wolves,
+        awayCorners: 3
+    },
+    {
+        home : Teams.Newcastle,
+        homeCorners: 3,
+        away: Teams.AstonVilla,
+        awayCorners: 6
+    },
+    {
+        home : Teams.Burnley,
+        homeCorners: 5,
+        away: Teams.Liverpool,
+        awayCorners: 8
+    },
+    //15/02/2022
+    {
+        home : Teams.ManUtd,
+        homeCorners: 10,
+        away: Teams.Brighton,
+        awayCorners: 2
+    },
+    //19/02/2022
+    {
+        home : Teams.WestHam,
+        homeCorners: 3,
+        away: Teams.Newcastle,
+        awayCorners: 7
+    },
+    {
+        home : Teams.Arsenal,
+        homeCorners: 14,
+        away: Teams.Brentford,
+        awayCorners: 0
+    },
+    {
+        home : Teams.AstonVilla,
+        homeCorners: 10,
+        away: Teams.Watford,
+        awayCorners: 5
+    },
+    {
+        home : Teams.Brighton,
+        homeCorners: 4,
+        away: Teams.Burnley,
+        awayCorners: 4
+    },
+    {
+        home : Teams.CrystalPalace,
+        homeCorners: 4,
+        away: Teams.Chelsea,
+        awayCorners: 4
+    },
+    {
+        home : Teams.Liverpool,
+        homeCorners: 9,
+        away: Teams.Norwich,
+        awayCorners: 5
+    },
+    {
+        home : Teams.Southampton,
+        homeCorners: 4,
+        away: Teams.Everton,
+        awayCorners: 4
+    },
+    {
+        home : Teams.ManCity,
+        homeCorners: 10,
+        away: Teams.Spurs,
+        awayCorners: 0
+    },
+    //20/02/2022
+    {
+        home : Teams.Leeds,
+        homeCorners: 3,
+        away: Teams.ManUtd,
+        awayCorners: 3
+    },
+    {
+        home : Teams.Wolves,
+        homeCorners: 7,
+        away: Teams.Leicester,
+        awayCorners: 10
+    },
+
 
 ]
